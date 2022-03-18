@@ -20,7 +20,7 @@ int main(){
     cout<<vidas<<"\n";
     cout<<decimal<<"\n";
     cout<<letra<<"\n";
-
-return 0;
+    
+    return 0;
 
     }
