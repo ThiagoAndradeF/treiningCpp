@@ -5,15 +5,18 @@ using namespace std;
 int main() {
     int num;
     /* 
-    num= 1 2 3 4 5 ou 10 11 12 13 14 15 (true)
-
+    1=verdadeito / true
+    2=falso/ false
+    if(num===1)  / if(num)
+    if(num==0)  / if(!num)
+    if(num!=1) /if(!num)
     */
-   num=12;
+   num=0;
 
-   if((num>=1 && num<=5) || (num>=10 && num<=15)){
+   if(num){
        cout << "\n\nValor Aceito\n";
    }else{
-       cout << "\n\nValor não aceito\n ";
+       cout << "\n\nValor nao aceito\n ";
    }
     return 0;
 
