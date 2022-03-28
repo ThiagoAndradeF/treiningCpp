@@ -17,30 +17,30 @@ int main(){
     cin>>palavra;
     system("cls");
 
-    while(palavra[i] != '\0'){
+    while(palavra[i] != '\0')/*Comando para selecionar o tamanho da array 'palavra'.*/{
         i++;
         tam++;
     }
-    for(i=0;i<30;i++){
+    for(i=0;i<30;i++){/*Comando para colocar tracinhos no lugar das letras*/
         secreta[i]='-';
     }
-    while ((chances>0) && (acertos<tam)){
+    /*Rotina do Jogo >>>*/while ((chances>0) && (acertos<tam)){
         cout << "Chances restantes: " << chances <<"\n\n";
         cout << "Palavra Secreta:";
-        for(i=0; i<tam; i++){
+        for(i=0; i<tam; i++)/*ROTINA PARA REVELAR A PALAVRA SECRETA*/{
             cout<<secreta[i];
         }
         cout<<"\n\nDigite uma letra:";
-        cin >> letra[0];
+        cin >> letra[0];//COLHER LETRA
         for(i=0; i<tam; i++){
             if (palavra[i]==letra[0])
             {
                 acerto=true;
                 secreta[i]=palavra[i];
                 acertos++;
-            }
+            }//revelar palavra 
         }
-        if(!acertos){
+        if(!acerto){
             chances--;
         }
         acerto=false;
@@ -52,4 +52,4 @@ int main(){
         cout<<"Que pena, voce perdeu!";
     }
     return 0;
-    }
+    } 
