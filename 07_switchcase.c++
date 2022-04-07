@@ -8,8 +8,7 @@ int main(){
     cout<<"(1)moto (2)carro (3)aviao (4)helicoptero";
     cin>>num;
     switch(num){
-        case 1:
-        case 2:
+        case 1:case 2:
         cout<<"\ntransporte terrestre\n";
         switch (num)
         {
@@ -21,8 +20,7 @@ int main(){
                  break;
         }
         break;
-        case 3:
-        case 4:
+        case 3:case 4:
          cout<<"\ntransporte aereo\n";
         switch (num)
         {
