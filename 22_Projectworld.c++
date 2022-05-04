@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
     
-	string str="Fala pedrao";
+	string str="Fala patrao";
 	char ch;
 	for(int i=0; i<str.length();i++){
 		ch=str.at(i);
